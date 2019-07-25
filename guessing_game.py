@@ -14,6 +14,6 @@ message = int(input("Guess a number between 1 to 10: "))
 while message != random_number:
 	if message < random_number:
 		message = int(input(f"{message} is too low. Try again: "))
-	if message > random_number:
+	else:
 		message = int(input(f"{message} is too high. Try again: "))
 print(f"{message} is correct!")
